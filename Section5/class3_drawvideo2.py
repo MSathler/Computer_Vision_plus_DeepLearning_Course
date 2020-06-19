@@ -5,7 +5,7 @@ cap = cv2.VideoCapture(0)
 time.sleep(1/2)
 
 ## CALLBACK FUNCTION RECTANGLE
-def draw_rectangle(even)
+def draw_rectangle(even):
 
 ## GLOBAL VARIABLES
 
