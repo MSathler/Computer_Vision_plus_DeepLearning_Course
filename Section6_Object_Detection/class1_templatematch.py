@@ -2,10 +2,10 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-full = cv2.imread('../Computer-Vision-with-Python/DATA/sammy.jpg')
+full = cv2.imread('../DATA/sammy.jpg')
 full = cv2.cvtColor(full,cv2.COLOR_BGR2RGB)
 
-face = cv2.imread('../Computer-Vision-with-Python/DATA/sammy_face.jpg')
+face = cv2.imread('../DATA/sammy_face.jpg')
 face = cv2.cvtColor(face,cv2.COLOR_BGR2RGB)
 
 # All the 6 methods for comparison in a list

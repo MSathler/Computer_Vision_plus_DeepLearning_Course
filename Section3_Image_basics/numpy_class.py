@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 from PIL import Image
 
-pic = Image.open('../Computer-Vision-with-Python/DATA/00-puppy.jpg')
+pic = Image.open('../DATA/00-puppy.jpg')
 
 pic_arr = np.asarray(pic)
 pic_red = pic_arr.copy()

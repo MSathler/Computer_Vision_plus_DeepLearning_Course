@@ -4,7 +4,7 @@ import numpy as np
 
 
 
-img = cv2.imread('../Computer-Vision-with-Python/DATA/dog_backpack.jpg')
+img = cv2.imread('../DATA/dog_backpack.jpg')
 
 img_arr = np.asarray(img)
 img_arr_fix = cv2.cvtColor(img_arr,cv2.COLOR_BGR2RGB)

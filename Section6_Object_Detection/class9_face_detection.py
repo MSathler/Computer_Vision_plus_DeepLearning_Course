@@ -2,11 +2,11 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import time
-nadia = cv2.imread('../Computer-Vision-with-Python/DATA/Nadia_Murad.jpg',0)
-denis = cv2.imread('../Computer-Vision-with-Python/DATA/Denis_Mukwege.jpg',0)
-solvay = cv2.imread('../Computer-Vision-with-Python/DATA/solvay_conference.jpg',0)
+nadia = cv2.imread('../DATA/Nadia_Murad.jpg',0)
+denis = cv2.imread('../DATA/Denis_Mukwege.jpg',0)
+solvay = cv2.imread('../DATA/solvay_conference.jpg',0)
 
-face_cascade = cv2.CascadeClassifier('../Computer-Vision-with-Python/DATA/haarcascades/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('../DATA/haarcascades/haarcascade_frontalface_default.xml')
 
 def detect_eyes(img):
     if img is None:
@@ -29,7 +29,7 @@ def adj_detect_face(img):
     return face_img
 result = adj_detect_face(solvay)
 
-eye_cascade = cv2.CascadeClassifier('../Computer-Vision-with-Python/DATA/haarcascades/haarcascade_eye.xml')
+eye_cascade = cv2.CascadeClassifier('../DATA/haarcascades/haarcascade_eye.xml')
 result = detect_eyes(solvay)
 
 cap = cv2.VideoCapture(0)

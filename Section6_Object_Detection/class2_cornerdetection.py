@@ -2,11 +2,11 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-flat_chess = cv2.imread('../Computer-Vision-with-Python/DATA/flat_chessboard.png')
+flat_chess = cv2.imread('../DATA/flat_chessboard.png')
 flat_chess = cv2.cvtColor(flat_chess,cv2.COLOR_BGR2RGB)
 
 gray_flat_chess = cv2.cvtColor(flat_chess,cv2.COLOR_BGR2GRAY)
-real_chess = cv2.imread('../Computer-Vision-with-Python/DATA/real_chessboard.jpg')
+real_chess = cv2.imread('../DATA/real_chessboard.jpg')
 
 real_chess = cv2.cvtColor(real_chess,cv2.COLOR_BGR2RGB)
 gray_real_chess = cv2.cvtColor(real_chess,cv2.COLOR_BGR2GRAY)

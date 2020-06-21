@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-img = cv2.imread('../Computer-Vision-with-Python/DATA/giraffes.jpg')
+img = cv2.imread('../DATA/giraffes.jpg')
 #fix_img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 
 #hsv = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)

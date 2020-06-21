@@ -2,9 +2,9 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-img1 = cv2.imread('../Computer-Vision-with-Python/DATA/dog_backpack.jpg')
+img1 = cv2.imread('../DATA/dog_backpack.jpg')
 img1 = cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
-img2 = cv2.imread('../Computer-Vision-with-Python/DATA/watermark_no_copy.png')
+img2 = cv2.imread('../DATA/watermark_no_copy.png')
 img2 = cv2.cvtColor(img2,cv2.COLOR_BGR2RGB)
 
 #BLENDING IMAGES OF THE SAME SIZE

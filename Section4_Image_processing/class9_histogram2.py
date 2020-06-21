@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-rainbow = cv2.imread('../Computer-Vision-with-Python/DATA/rainbow.jpg')
+rainbow = cv2.imread('../DATA/rainbow.jpg')
 show_rainbow = cv2.cvtColor(rainbow,cv2.COLOR_BGR2RGB)
 
 img =rainbow

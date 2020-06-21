@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread('../Computer-Vision-with-Python/DATA/sammy_face.jpg')
+img = cv2.imread('../DATA/sammy_face.jpg')
 img2 = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 
 med_val = np.median(img)

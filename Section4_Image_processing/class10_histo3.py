@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-gorilla = cv2.imread('../Computer-Vision-with-Python/DATA/gorilla.jpg',0)
-color_gorilla = cv2.imread('../Computer-Vision-with-Python/DATA/gorilla.jpg')
+gorilla = cv2.imread('../DATA/gorilla.jpg',0)
+color_gorilla = cv2.imread('../DATA/gorilla.jpg')
 show_gorilla = cv2.cvtColor(color_gorilla,cv2.COLOR_BGR2RGB)
 
 hsv = cv2.cvtColor(color_gorilla,cv2.COLOR_BGR2HSV)

@@ -33,9 +33,9 @@ def detect_plate(img):
         cv2.rectangle(russian_plate_col_copy,(x,y),(x+w,y+h),(255,0,0),5)
     return russian_plate_col_copy
 
-russian_plate = cv2.imread('../Computer-Vision-with-Python/DATA/car_plate.jpg')
+russian_plate = cv2.imread('../DATA/car_plate.jpg')
 russian_plate_col = cv2.cvtColor(russian_plate,cv2.COLOR_BGR2RGB)
-plate_cascade = cv2.CascadeClassifier('../Computer-Vision-with-Python/DATA/haarcascades/haarcascade_russian_plate_number.xml')
+plate_cascade = cv2.CascadeClassifier('../DATA/haarcascades/haarcascade_russian_plate_number.xml')
 
 result = detect_plate(russian_plate_col)
 result2 = detect_and_blur_plate(russian_plate_col)

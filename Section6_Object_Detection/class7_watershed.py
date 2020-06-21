@@ -8,7 +8,7 @@ def display(img,cmap='gray'):
     ax.imshow(img,cmap='gray')
     plt.show()
 
-sep_coins = cv2.imread('../Computer-Vision-with-Python/DATA/pennies.jpg')
+sep_coins = cv2.imread('../DATA/pennies.jpg')
 
 
 # MEDIAN BLUR
@@ -27,7 +27,7 @@ for i in range(len(contours)):
         cv2.drawContours(sep_coins,contours,i,(255,0,0),10)
 
 #PART 2
-img = cv2.imread('../Computer-Vision-with-Python/DATA/pennies.jpg')
+img = cv2.imread('../DATA/pennies.jpg')
 img = cv2.medianBlur(img,35)
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 

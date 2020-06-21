@@ -8,8 +8,8 @@ def display(img,cmap='gray'):
     ax.imshow(img,cmap='gray')
     plt.show()
 
-reeses = cv2.imread('../Computer-Vision-with-Python/DATA/reeses_puffs.png',0)
-cereals = cv2.imread('../Computer-Vision-with-Python/DATA/many_cereals.jpg',0)
+reeses = cv2.imread('../DATA/reeses_puffs.png',0)
+cereals = cv2.imread('../DATA/many_cereals.jpg',0)
 
 #CREATE A OBJECT
 orb = cv2.ORB_create()

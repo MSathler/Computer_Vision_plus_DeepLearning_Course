@@ -2,13 +2,13 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-dark_horse = cv2.imread('../Computer-Vision-with-Python/DATA/horse.jpg') #ORIGINAL BGR OPENCV
+dark_horse = cv2.imread('../DATA/horse.jpg') #ORIGINAL BGR OPENCV
 show_horse = cv2.cvtColor(dark_horse,cv2.COLOR_BGR2RGB)                  #CONVERTED TO RGB FOR SHOW
 
-rainbow = cv2.imread('../Computer-Vision-with-Python/DATA/rainbow.jpg')
+rainbow = cv2.imread('../DATA/rainbow.jpg')
 show_rainbow = cv2.cvtColor(rainbow,cv2.COLOR_BGR2RGB)
 
-blue_bricks = cv2.imread('../Computer-Vision-with-Python/DATA/bricks.jpg')
+blue_bricks = cv2.imread('../DATA/bricks.jpg')
 show_bricks = cv2.cvtColor(blue_bricks,cv2.COLOR_BGR2RGB)
 
 #OPENCV BGR

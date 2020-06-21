@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 import cv2
 
-img = cv2.imread('../Computer-Vision-with-Python/DATA/00-puppy.jpg')
+img = cv2.imread('../DATA/00-puppy.jpg')
 if img is None:
     print("Caminho errado, tente novamente")
 
@@ -14,7 +14,7 @@ img.shape
 #OPENCV     --> BGR
 fix_img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 
-img_gray = cv2.imread('../Computer-Vision-with-Python/DATA/00-puppy.jpg', cv2.IMREAD_GRAYSCALE)
+img_gray = cv2.imread('../DATA/00-puppy.jpg', cv2.IMREAD_GRAYSCALE)
 new_img = cv2.resize(fix_img,(1000,400))
 w_ratio = 0.5
 h_ratio = 0.5

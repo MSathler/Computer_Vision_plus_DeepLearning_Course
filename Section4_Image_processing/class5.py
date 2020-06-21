@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def load_img():
-    img = cv2.imread('../Computer-Vision-with-Python/DATA/bricks.jpg').astype(np.float32)/255
+    img = cv2.imread('../DATA/bricks.jpg').astype(np.float32)/255
     img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
     return img
 
@@ -26,9 +26,9 @@ dst = cv2.filter2D(img,-1,kernel)
 
 ##PART 2 NEW IMG
 
-img = cv2.imread('../Computer-Vision-with-Python/DATA/sammy.jpg')
+img = cv2.imread('../DATA/sammy.jpg')
 img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-noise_img = cv2.imread('../Computer-Vision-with-Python/DATA/sammy_noise.jpg')
+noise_img = cv2.imread('../DATA/sammy_noise.jpg')
 media = cv2.medianBlur(noise_img,5)
 
 display_img()

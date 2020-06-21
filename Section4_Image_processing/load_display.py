@@ -4,7 +4,7 @@ import numpy as np
 
 class img():
     def load_img():
-        img = cv2.imread('../Computer-Vision-with-Python/DATA/bricks.jpg').astype(np.float32)/255
+        img = cv2.imread('../DATA/bricks.jpg').astype(np.float32)/255
         img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
         return img
 

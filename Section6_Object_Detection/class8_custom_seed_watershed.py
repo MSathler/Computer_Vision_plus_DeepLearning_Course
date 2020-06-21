@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 
 
-road = cv2.imread('../Computer-Vision-with-Python/DATA/road_image.jpg')
+road = cv2.imread('../DATA/road_image.jpg')
 road_copy = road.copy()
 
 marker_image = np.zeros(road.shape[:2],dtype=np.int32)

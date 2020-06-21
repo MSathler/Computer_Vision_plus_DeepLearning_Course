@@ -6,7 +6,7 @@ from keras.models import Sequential,load_model
 from keras.layers import Dense
 from sklearn.metrics import confusion_matrix,classification_report
 
-data = genfromtxt('../Computer-Vision-with-Python/DATA/bank_note_data.txt',delimiter=',')
+data = genfromtxt('../DATA/bank_note_data.txt',delimiter=',')
 
 labels = data[:,4]
 features = data[:,0:4]
